@@ -1,0 +1,24 @@
+/**
+ * New model file
+ */
+
+namespace org.randhir.logistics
+import org.randhir.participants.Patient
+//import org.example.participants
+//namespace composers.logistics
+//import org.example.participants
+asset Appointment identified by id{
+	o String id
+	o DateTime time
+	o DateTime realTime
+}
+
+concept Resources{
+	
+}
+
+transaction addAppointment{
+	o DateTime time 
+	o DateTime realTime
+	--> Patient patient
+}
